@@ -24,11 +24,11 @@
           <img src="images/logo.svg" alt="Logo" />
         </div>
         <nav>
-          <span class="nav_btn">
-            <img id="nav_ham" src="images/icon-hamburger.svg" alt="" />
+          <span id="nav_btn">
+            <img id="nav_ham" class="active" src="images/icon-hamburger.svg" alt="" />
             <img id="nav_close" src="images/icon-close.svg" alt="" />
           </span>
-          <ul>
+          <ul id="menu">
             <li>Product</li>
             <li>Features</li>
             <li>Pricing</li>
@@ -54,5 +54,18 @@
         
       </div>
     </section>
+    <script>
+      let nav_btn = document.getElementById('nav_btn');
+      let menu = document.getElementById('menu');
+      let nav_ham = document.getElementById('nav_ham');
+      let nav_close = document.getElementById('nav_close');
+
+      nav_btn.addEventListener("click", mobileMenu);
+      function mobileMenu() {
+        menu.classList.toggle('active');
+        nav_ham.classList.toggle('active');
+        nav_close.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
