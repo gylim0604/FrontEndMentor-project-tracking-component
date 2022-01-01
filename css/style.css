@@ -179,7 +179,7 @@ nav li:nth-child(4) {
   .container {
     padding: 8vh 12% 5vh;
   }
-  nav .nav_btn {
+  nav #nav_btn {
     display: none;
   }
   nav ul {
